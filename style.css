@@ -1,0 +1,42 @@
+body {
+	font-family: Arial;
+	background-color: rgb(205, 242, 242);
+}
+
+img {
+	border-radius: 20%;
+	display: block;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.social-contact{
+	list-style-type: none;
+}
+
+
+h2, h4 {
+	color: rgb(150, 230, 0);
+}
+
+.panel {
+	border: 1px solid black;
+	border-radius: 5px;
+	box-shadow: 4px 2px 6px grey;
+	margin: 3%;
+}
+
+.panel .panelHeading {
+	background-color: #f2dc3a;
+	border-radius: 5px 5px 0px 0px;
+	font-size: 25px;
+	padding: 10px 20px;
+}
+
+.panel .panelBody {
+	background-color: #42f4f4;
+	padding: 5px 5px 5px 35px;
+	margin: 0px;
+}
