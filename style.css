@@ -1,58 +1,67 @@
 body {
-	font-family: Arial;
-	background-color: rgb(205, 242, 242);
+  margin: 0;
+  padding: 0;
 }
 
-img {
-	border-radius: 50%;
-	display: block;
-	margin: auto;
-	max-width: 100%;
-	height: auto;
+.page {
+  margin: 1% 10%;
+  padding: 0.5% 2%;
+  /* border: solid; */
 }
 
-.social-contact{
-	list-style-type: none;
-	margin: auto;
+h2 {
+  text-align: center;
+  font-size: 40px;
+  color: green;
 }
 
-h1 {
-	background-color: rgba(126, 34, 34, 0.1);
-	border-radius: 7px;
-}
-
-h1:hover {
-	background-color: rgba(90, 90, 90, 0.4);
-}
-
-
-h2, h4 {
-	color: rgb(116, 83, 207);
+h3 {
+  font-size: 2em;
+  color: green;
+  border-bottom: 2px solid green;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin-bottom: 0px;
+  font-family: Helvetica, sans-serif;
 }
 
 .panel {
-	border: 1px solid black;
-	border-radius: 5px;
-	box-shadow: 4px 2px 6px grey;
-	margin: 3%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 3px 3px 7px grey;
+  padding: 5px;
+  margin: 10px;
 }
 
+.panelHead {
+  padding-left: 15px;
+  margin: 0;
+}
+
+.panelBody {
+  /* margin-top: 0px;
+  padding-bottom: 0px; */
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-family: Helvetica, sans-serif;
+}
 
 .panel:hover {
-	border-color: black;
+  transition-delay: 0s;
+  transition-duration: 0.3s;
+  box-shadow: 5px 5px 20px black;
+  -moz-box-shadow: 5px 5px 20px black;
+  -webkit-box-shadow: 5px 5px 20px black;
+  -o-box-shadow: 5px 5px 20px black;
 }
 
-.panel .panelHeading {
-	background-color: rgb(116, 83, 207);
-	color: beige;
-	border-radius: 5px 5px 0px 0px;
-	font-size: 25px;
-	padding: 10px 20px;
+.centerImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  box-shadow: 5px 5px 20px grey;
 }
 
-.panel .panelBody {
-	background-color: hsl(356, 17%, 65%);
-	color: whitesmoke;
-	padding: 5px 5px 5px 35px;
-	margin: 0px;
-}
