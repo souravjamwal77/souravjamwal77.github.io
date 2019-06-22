@@ -9,6 +9,12 @@ body {
   /* border: solid; */
 }
 
+@media screen and (max-width: 600px) {
+  .page {
+    margin: 0px;
+  }
+}
+
 h2 {
   text-align: center;
   font-size: 40px;
