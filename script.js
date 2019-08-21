@@ -22,3 +22,6 @@ window.onscroll = function(){
   }
   prevScrollpos = currentScrollpos;
 }
+
+
+setTimeout(() => document.querySelector('p').classList.add('show'), 1000);
