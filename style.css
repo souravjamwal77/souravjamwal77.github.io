@@ -1,7 +1,7 @@
 body {
   margin: 0;
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
 }
 
 /* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
@@ -50,8 +50,10 @@ body {
   }
 }
 
+ 
 /* The responsive class is added to the topnav with Javascript when the user clicks on the icon 
 this class will make topnav look good on smal screens */
+
 @media screen and (max-width: 600px){
   .topnav.responsive {position: relative;}
   .topnav.responsive a.icon {
@@ -64,11 +66,17 @@ this class will make topnav look good on smal screens */
     display: block;
     text-align: left;
   }
-}
+} 
+
+
+
+/* =================================================================================================== */
+/* ------------------------ Below code shows items/text after page load -------------------------------*/
+/* =================================================================================================== */
 
 
 /* Show text after page load */
-p {
+/* p {
   font-size: 40px;
   opacity: 0;
   transition: opacity 2s;
@@ -76,23 +84,46 @@ p {
 
 .show {
   opacity: 1;
+} */
+
+
+/* =================================================================================================== */
+/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Above code shows items/text after page load ^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+/* =================================================================================================== */
+
+
+
+
+/* =================================================================================================== */
+/* ----------------------------- Below code will give the Typing effect -------------------------------*/
+/* =================================================================================================== */
+
+div.typing {
+  display: flex;
+  justify-items: center;
 }
 
-
 .typing h1{
+  font-family: sans-serif;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid orange; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
   animation: 
-    typing 3.5s steps(40, end),
+    typing 4.0s steps(40, end),
     blink-caret .75s step-end infinite;
 }
 
 @keyframes typing {
   from { width: 0 }
-  to { width: 100% }
+  to { width: 35% }
+}
+@media screen and (max-width: 600px){
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  } 
 }
 
 @keyframes blink-caret {
